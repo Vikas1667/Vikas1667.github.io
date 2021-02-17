@@ -1,3 +1,10 @@
+---
+layout: post
+published: true
+title: >-
+  GPT-GPT2 Roadmap
+---
+
 # **GPT to GPT2**
 
 #
