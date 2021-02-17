@@ -22,29 +22,29 @@ Unsupervised learning served as pre-training objective for supervised fine-tuned
 
 **GPT Architecture** :
 
-![GPT Architecture]({{site.baseurl}}/images/GPT_1_architecture.jpg)
+![GPT Architecture](/images/GPT_1_architecture.jpg)
 
 **Data Corpus**
 
-![Corpus]({{site.baseurl}}/images/Corpus.JPG) 
+![Corpus](/images/Corpus.JPG) 
 
 **Concepts:**
 
 1. **Unsupervised Language Modelling**  (Pre-training): For unsupervised learning, standard language model objective was used.
 
-![]({{site.baseurl}}/images/unsupervised_language_model_f1.jpg)
+![](/images/unsupervised_language_model_f1.jpg)
 
 where T was the set of tokens in unsupervised data {t\_1,…,t\_n}, k was size of context window, θ were the parameters of neural network trained using stochastic gradient descent.
 
 1. **Supervised Fine-Tuning** : This part aimed at maximising the likelihood of observing label y, given features or tokens x\_1,…,x\_n.
 
-![]({{site.baseurl}}/images/unsupervised_language_model_f2.jpg)
+![](/images/unsupervised_language_model_f2.jpg)
 
 **where C was the labeled dataset made up of training examples.**
 
 Instead of simply maximizing the objective mentioned in equation (ii), the authors added an  **auxiliary learning objective**  for supervised fine-tuning to get better generalization and faster convergence. The modified training objective was stated as:
 
-![]({{site.baseurl}}/images/unsupervised_language_model_f3.jpg)
+![](/images/unsupervised_language_model_f3.jpg)
 
 where L₁(C) was the auxiliary objective of learning language model and λ was the weight given to this secondary learning objective. λ was set to 0.5.
 
@@ -80,27 +80,27 @@ Following are the implementation details:
 
 **1.Question Answering**
 
-![]({{site.baseurl}}/images/GPT_1_ques_ans.jpg)
+![](/images/GPT_1_ques_ans.jpg)
 
 **2.Semantic Similarity**
 
-![]({{site.baseurl}}/images/GPT_1_semantic_sim.jpg)
+![](/images/GPT_1_semantic_sim.jpg)
 
 **3. Natural Language Inference**
 
-![]({{site.baseurl}}/images/GPT_1_NLI.jpg)
+![](/images/GPT_1_NLI.jpg)
 
 **4. Text Classification**
 
-![]({{site.baseurl}}/images/GPT_1_text_class.jpg)
+![](/images/GPT_1_text_class.jpg)
 
 **Model Performance:**
 
-![]({{site.baseurl}}/images/GPT_1_model_performance)
+![](/images/GPT_1_model_performance)
 
 **Ablations:**
 
-![]({{site.baseurl}}/images/GPT_1_ablations.jpg)
+![](/images/GPT_1_ablations.jpg)
 
 #
 **# Language Models are unsupervised multitask learners (**
@@ -121,7 +121,7 @@ Its Stack of Decoder block of transformers with larger Dataset and more learning
 
 Dataset name: &quot;Webtext&quot;
 
-![]({{site.baseurl}}/images/GPT_2_dataset_collection.JPG)
+![](/images/GPT_2_dataset_collection.JPG)
 
 There are three released sizes of GPT-2:
 
@@ -130,23 +130,23 @@ There are three released sizes of GPT-2:
 - 774M: the &quot;large&quot; model, cannot currently be finetuned with Colaboratory but can be used to generate text from the pretrained model (see later in Notebook)
 - 1558M: the &quot;extra large&quot;, true model. Will not work if a K80 GPU is attached to the notebook. (like 774M, it cannot be finetuned).
 
-![]({{site.baseurl}}/images/GPT_Data_set.JPG)
+![](/images/GPT_Data_set.JPG)
 
-![]({{site.baseurl}}/images/GPT_2_model_variants.JPG)
+![](/images/GPT_2_model_variants.JPG)
 
 **GPT2 Tasks**
 
 **1.Question Answering**
 
-![]({{site.baseurl}}/images/GPT_2_Question_answering_task.JPG)
+![](/images/GPT_2_Question_answering_task.JPG)
 
 **2.Translation:**
 
-![]({{site.baseurl}}/images/GPT_2_language_translation.JPG)
+![](/images/GPT_2_language_translation.JPG)
 
 **3.Zero Shot NLP Task:** Question answering, meaning answering without a context passage.
 
-![]({{site.baseurl}}/images/Zero_shot_NLP_tasks.JPG)
+![](/images/Zero_shot_NLP_tasks.JPG)
 
 #
 
@@ -163,7 +163,7 @@ There are three released sizes of GPT-2:
 
 **Model Performance:**
 
-![]({{site.baseurl}}/images/GPT_2_model_performance.JPG)
+![](/images/GPT_2_model_performance.JPG)
 
 **Papers** :
 
