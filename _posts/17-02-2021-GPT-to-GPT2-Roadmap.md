@@ -22,29 +22,29 @@ Unsupervised learning served as pre-training objective for supervised fine-tuned
 
 **GPT Architecture** :
 
-![GPT Architecture]({{site.baseurl}}/Images/GPT_1_architecture.jpg)
+![GPT Architecture]({{site.baseurl}}/images/GPT_1_architecture.jpg)
 
 **Data Corpus**
 
-![Corpus](Images/Corpus.JPG) 
+![Corpus]({{site.baseurl}}/images/Corpus.JPG) 
 
 **Concepts:**
 
 1. **Unsupervised Language Modelling**  (Pre-training): For unsupervised learning, standard language model objective was used.
 
-![](Images/unsupervised_language_model_f1.jpg)
+![]({{site.baseurl}}/images/unsupervised_language_model_f1.jpg)
 
 where T was the set of tokens in unsupervised data {t\_1,…,t\_n}, k was size of context window, θ were the parameters of neural network trained using stochastic gradient descent.
 
 1. **Supervised Fine-Tuning** : This part aimed at maximising the likelihood of observing label y, given features or tokens x\_1,…,x\_n.
 
-![](Images/unsupervised_language_model_f2.jpg)
+![]({{site.baseurl}}/images/unsupervised_language_model_f2.jpg)
 
 **where C was the labeled dataset made up of training examples.**
 
 Instead of simply maximizing the objective mentioned in equation (ii), the authors added an  **auxiliary learning objective**  for supervised fine-tuning to get better generalization and faster convergence. The modified training objective was stated as:
 
-![]({{site.baseurl}}/Images/unsupervised_language_model_f3.jpg)
+![]({{site.baseurl}}/images/unsupervised_language_model_f3.jpg)
 
 where L₁(C) was the auxiliary objective of learning language model and λ was the weight given to this secondary learning objective. λ was set to 0.5.
 
@@ -80,27 +80,27 @@ Following are the implementation details:
 
 **1.Question Answering**
 
-![]({{site.baseurl}}/Images/GPT_1_ques_ans.jpg)
+![]({{site.baseurl}}/images/GPT_1_ques_ans.jpg)
 
 **2.Semantic Similarity**
 
-![]({{site.baseurl}}/Images/GPT_1_semantic_sim.jpg)
+![]({{site.baseurl}}/images/GPT_1_semantic_sim.jpg)
 
 **3. Natural Language Inference**
 
-![](Images/GPT_1_NLI.jpg)
+![]({{site.baseurl}}/images/GPT_1_NLI.jpg)
 
 **4. Text Classification**
 
-![](Images/GPT_1_text_class.jpg)
+![]({{site.baseurl}}/images/GPT_1_text_class.jpg)
 
 **Model Performance:**
 
-![]({{site.baseurl}}/Images/GPT_1_model_performance)
+![]({{site.baseurl}}/images/GPT_1_model_performance)
 
 **Ablations:**
 
-![]({{site.baseurl}}/Images/GPT_1_ablations.jpg)
+![]({{site.baseurl}}/images/GPT_1_ablations.jpg)
 
 #
 **# Language Models are unsupervised multitask learners (**
@@ -121,7 +121,7 @@ Its Stack of Decoder block of transformers with larger Dataset and more learning
 
 Dataset name: &quot;Webtext&quot;
 
-![]({{site.baseurl}}/Images/GPT_2_dataset_collection.JPG)
+![]({{site.baseurl}}/images/GPT_2_dataset_collection.JPG)
 
 There are three released sizes of GPT-2:
 
@@ -130,23 +130,23 @@ There are three released sizes of GPT-2:
 - 774M: the &quot;large&quot; model, cannot currently be finetuned with Colaboratory but can be used to generate text from the pretrained model (see later in Notebook)
 - 1558M: the &quot;extra large&quot;, true model. Will not work if a K80 GPU is attached to the notebook. (like 774M, it cannot be finetuned).
 
-![]({{site.baseurl}}/Images/GPT_Data_set.JPG)
+![]({{site.baseurl}}/images/GPT_Data_set.JPG)
 
-![]({{site.baseurl}}/Iamges/GPT_2_model_variants.JPG)
+![]({{site.baseurl}}/images/GPT_2_model_variants.JPG)
 
 **GPT2 Tasks**
 
 **1.Question Answering**
 
-![]({{site.baseurl}}/Images/GPT_2_Question_answering_task.JPG)
+![]({{site.baseurl}}/images/GPT_2_Question_answering_task.JPG)
 
 **2.Translation:**
 
-![]({{site.baseurl}}/Images/GPT_2_language_translation.JPG)
+![]({{site.baseurl}}/images/GPT_2_language_translation.JPG)
 
 **3.Zero Shot NLP Task:** Question answering, meaning answering without a context passage.
 
-![]({{site.baseurl}}/Images/Zero_shot_NLP_tasks.JPG)
+![]({{site.baseurl}}/images/Zero_shot_NLP_tasks.JPG)
 
 #
 
@@ -163,7 +163,7 @@ There are three released sizes of GPT-2:
 
 **Model Performance:**
 
-![]({{site.baseurl}}/Images/GPT_2_model_performance.JPG)
+![]({{site.baseurl}}/images/GPT_2_model_performance.JPG)
 
 **Papers** :
 
