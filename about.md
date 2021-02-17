@@ -9,5 +9,4 @@ Hello! I'm VIkas and this is my English tech [blog](/). The most popular posts h
 
 
 ### Contact me
-
-alammar at gmail
+Vikas at gmail
